@@ -1,0 +1,10 @@
+dataset_name: wasabi_emotions
+
+train_path: /lyrics_generation/data/wasabi/emotion_dataset/train.jsonl
+validation_path: /lyrics_generation/data/wasabi/emotion_dataset/dev.jsonl
+test_path: /lyrics_generation/data/wasabi/emotion_dataset/test.jsonl
+label_map_path: /lyrics_generation/data/wasabi/emotion_dataset/labels.txt
+max_len: 256
+batch_size: 2 
+test_batch_size: 64
+num_workers: 8

@@ -1,0 +1,7 @@
+pretrained_model_name_or_path: google/t5-v1_1-large
+from_pretrained: True
+from_checkpoint: False
+force_schema: True
+max_num_rhymes: 27
+max_sentence_len: 512
+use_custom: True

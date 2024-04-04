@@ -1,0 +1,8 @@
+pretrained_model_name_or_path: /lyrics_generation/NEW_CKPT_CHECK/t5-v1_1-large
+from_pretrained: False
+from_checkpoint: True
+force_schema: True
+use_custom: True
+max_num_rhymes: 27
+tokenizer_path: /lyrics_generation/NEW_CKPT_CHECK/custom-t5v1.1-large-RL/tokenizer
+training_checkpoint_to_load: /lyrics_generation/NEW_CKPT_CHECK/custom-t5v1.1-large-RL/epoch=5-step=381780.ckpt

@@ -1,0 +1,7 @@
+max_length: 300 
+num_beams: 4
+num_return_sequences: 1 
+no_repeat_ngram_size: 2
+early_stopping: True
+batch_size: 4
+do_sample: False

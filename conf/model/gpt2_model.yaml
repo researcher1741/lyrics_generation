@@ -1,0 +1,4 @@
+pretrained_model_name_or_path: /lyrics_generation/MODELS/gpt2-large
+from_pretrained: True
+from_checkpoint: False
+force_schema: True

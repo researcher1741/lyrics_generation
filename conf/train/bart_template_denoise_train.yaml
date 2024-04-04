@@ -1,0 +1,41 @@
+# reproducibility
+seed: 42
+
+# model name
+model_name: bart-large-rhyme-denoise-topic-for-sure # used to name the directory in which model's checkpoints will be stored (experiments/model_name/...)
+lr: 1e-5
+description: "Plain bart model trained on genius.com blocks as a denoising task for enforcing rhyming"
+
+resume_from: /lyrics_generation/CHECKPOINTS/genius_phoneme/bart-large-rhyme-denoise-topic-for-sure/checkpoints/epoch=0-step=19999.ckpt
+wandb_resume_rune_id: 1lcymfuk
+# pl_trainer
+pl_trainer:
+  _target_: pytorch_lightning.Trainer
+  gpus: [1,]
+  accumulate_grad_batches: 2
+  limit_val_batches: 50
+  gradient_clip_val: 10.0
+  val_check_interval: 10_000  # you can specify an int "n" here => validation every "n" steps
+  num_sanity_val_steps: 2
+  max_steps: 1_000_000
+
+  # strategy: ddp
+  # num_nodes: 1
+  # uncomment the lines below for training with mixed precision
+  precision: 16
+
+# early stopping callback
+# "early_stopping_callback: null" will disable early stopping
+early_stopping_callback:
+  _target_: pytorch_lightning.callbacks.EarlyStopping
+  monitor: val_loss
+  mode: min
+  patience: 5
+
+model_checkpoint_callback:
+  _target_: pytorch_lightning.callbacks.ModelCheckpoint
+  monitor: val_loss
+  mode: min
+  verbose: True
+  save_top_k: 2
+  dirpath: /lyrics_generation/NEW_CKPT_CHECK/

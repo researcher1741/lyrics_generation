@@ -1,0 +1,14 @@
+dataset_name: multilingual_section
+
+train_path: /lyrics_generation/DATA/T5_multilingual/train.jsonl
+validation_path: /lyrics_generation/DATA/T5_multilingual/dev.jsonl
+test_path: /lyrics_generation/DATA/T5_multilingual/test.jsonl
+genre_mapping_path: /lyrics_generation/data/genres_mapping_100.txt
+language: multi
+add_language: True
+max_len: 300
+batch_size: 2
+test_batch_size: 8
+num_workers: 0
+with_prompt: True
+version: '0.2.1' # LastWordFirst

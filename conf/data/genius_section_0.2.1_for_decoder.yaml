@@ -1,0 +1,14 @@
+dataset_name: genius_section_0.2.1
+
+train_path: /lyrics_generation/DATA/Lyrics_English_Section_Dataset_Rhyme/train.jsonl
+validation_path: /lyrics_generation/DATA/Lyrics_English_Section_Dataset_Rhyme/dev.3500.jsonl
+test_path: /lyrics_generation/DATA/Lyrics_English_Section_Dataset_Rhyme/test.3500.jsonl
+genre_mapping_path: /lyrics_generation/data/genres_mapping_100.txt
+word_frequency_data_path: /lyrics_generation/data/enwiki-20210820-words-frequency.filtered.pkl
+language: english
+for_decoder: True
+max_len: 300
+batch_size: 2 
+test_batch_size: 16
+num_workers: 8
+version: '0.2.1' # LyricsBlockDatasetLastWordFirst

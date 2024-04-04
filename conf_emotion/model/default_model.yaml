@@ -1,0 +1,4 @@
+
+pretrained_model_name: allenai/longformer-large-4096
+num_labels: 10
+train_encoder: True 

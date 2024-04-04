@@ -1,0 +1,15 @@
+# Required to make the "experiments" dir the default one for the output of the models
+hydra:
+  run:
+    dir: ./experiments/${data.dataset_name}-v${data.version}/${train.model_name}/
+    
+#${now:%Y-%m-%d}/${now:%H-%M-%S}
+defaults:
+  - _self_
+  - train: t5_LWF_plus_train
+  - model: t5_LWF_plus_model
+  - data: t5_LWF_plus_data
+  - generation: t5_LWF_plus_generation
+
+out_dir: /lyrics_generation/experiments/t5_LWF_plus/
+checkpoint_path: /lyrics_generation/NEW_CKPT_CHECK/276996/epoch=7-step=276996.ckpt

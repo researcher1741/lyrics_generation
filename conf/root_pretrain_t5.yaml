@@ -1,0 +1,12 @@
+# Required to make the "experiments" dir the default one for the output of the models
+hydra:
+  run:
+    dir: ./experiments/${data.dataset_name}-v${data.version}/${train.model_name}/
+    
+#${now:%Y-%m-%d}/${now:%H-%M-%S}
+defaults:
+  - _self_
+  - train: pretrain_t5 
+  - model: t5_model_random
+  - data: genius_section_0.2.1
+  - generation: beam_generation

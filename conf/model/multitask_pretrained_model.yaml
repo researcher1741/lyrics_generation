@@ -1,0 +1,4 @@
+pretrained_model_name_or_path: /lyrics_generation/MODELS/multitask-bart-large-pretrained
+tokenizer_name: facebook/bart-large
+from_checkpoint: False
+from_pretrained: False

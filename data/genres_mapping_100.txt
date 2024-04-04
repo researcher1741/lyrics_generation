@@ -1,0 +1,259 @@
+Psychedelic Folk	Folk
+Psychedelic Trance	Other
+Psychedelic Pop	Pop
+Psychedelic Rock	Rock
+Progressive Trance	Other
+Hard Trance	Other
+Vocal Trance	Vocal
+Goa Trance	Other
+Dark Ambient	Other
+Comedy Rock	Rock	**	['Rock', 'Comedy']
+Hard Rock	Rock
+Classic Rock	Rock
+Progressive  Rock	Rock
+Celtic Rock	Rock
+Symphonic Rock	Rock
+Pub Rock	Rock
+Experimental Rock	Rock
+Instrumental Rock	Rock
+Southern Rock	Rock
+Electronic Rock	Rock	**	['Rock', 'Electronic']
+Krautrock	Rock
+Christian Rock	Rock	**	['Rock', 'Christian']
+Garage Rock	Rock
+Crack Rock Steady	Rock
+Rock Against Communism	Rock
+Alpine Rock	Rock
+Space Rock	Rock
+Alternative  Rock	Rock
+Gothic Rock	Rock
+Reggae Rock	Rock	**	['Rock', 'Reggae']
+Country Rock	Rock	**	['Rock', 'Country']
+Math Rock	Rock
+Stoner Rock	Rock
+Rap Rock	Rock
+Funk Rock	Rock	**	['Rock', 'Funk']
+Roots Rock	Rock
+Glam Rock	Rock
+Noise Rock	Rock
+Rockabilly	Rock
+Indie Rock	Rock	**	['Rock', 'Indie']
+Deutschrock	Rock
+Latin Rock	Rock	**	['Rock', 'Latin']
+Folk Rock	Rock	**	['Rock', 'Folk']
+J-Rock	Rock
+Art Rock	Rock
+Rock Opera	Rock
+Andalusian Rock	Rock
+Surf Rock	Rock
+Raw Rock	Rock
+Rock en Español	Rock
+Swiss Rock	Rock
+Soft Rock	Rock
+Alternative Rock	Rock
+Neo-Progressive Rock	Rock	**	['Rock', 'Progressive Rock']
+Progressive Rock	Rock
+Rock 'N' Roll	Rock
+Deathrock	Rock
+Acid Rock	Rock
+Post-Rock	Rock
+Piano Rock	Rock
+Industrial Rock	Rock	**	['Rock', 'Industrial']
+Medieval Folk Rock	Rock	**	['Rock', 'Folk', 'Medieval', 'Folk Rock']
+Blues Rock	Rock	**	['Rock', 'Blues']
+Modern Rock	Rock
+Dark Rock	Rock
+Dance-Rock	Rock	**	['Rock', 'Dance']
+Brazilian Rock	Rock
+Punk Rock	Rock
+Turkish Rock	Rock
+Heartland Rock	Rock
+Pop Rock	Rock	**	['Rock', 'Pop']
+Pop-Folk	Folk	**	['Folk', 'Pop']
+Electric Folk	Folk
+Anti-Folk	Folk
+Psych Folk	Folk
+Progressive Folk	Folk
+Mystic Folk	Folk
+Freak Folk	Folk
+Irish Folk	Folk
+Italian Folk	Folk
+Folk Metal	Folk
+Folk Punk	Folk
+Indie Folk	Folk	**	['Folk', 'Indie']
+Neofolk	Folk
+Folktronica	Folk
+Contemporary Folk	Folk
+Dubstep	Other
+Acid Techno	Other
+Minimal Techno	Other
+Electro House	Other
+Electroclash	Other
+Electronic	Other
+Electronicore	Electronic
+Electro Swing	Other
+Dark Electro	Other
+Electropunk	Other
+Electronica	Electronic
+Electro-Industrial	Industrial
+Electropop	Pop
+Samba-Canção	Other
+Christian Punk	Christian
+Christian Metal	Christian
+Christian Hardcore	Christian
+Contemporary Christian	Christian
+Christian Hip Hop	Hip Hop	**	['Christian', 'Hip Hop']
+Christian Ska	Ska	**	['Christian', 'Ska']
+Operatic Pop	Pop
+Comic Opera	Other
+Alternative Hip Hop	Hip Hop
+Nerdcore Hip Hop	Hip Hop
+Southern Hip Hop	Hip Hop
+Latin Hip Hop	Hip Hop	**	['Hip Hop', 'Latin']
+Australian Hip Hop	Hip Hop
+French Hip Hop	Hip Hop
+Underground Hip Hop	Hip Hop
+Experimental Hip Hop	Hip Hop
+East Coast Hip Hop	Hip Hop
+Political Hip Hop	Hip Hop
+Canadian Hip Hop	Hip Hop
+Hardcore Hip Hop	Hip Hop
+West Coast Hip Hop	Hip Hop
+Glitch Hop	Other
+Art Punk	Other
+Deutschpunk	Other
+Garage Punk	Other
+Funk Carioca	Funk
+Junkanoo	Other
+Post-Punk	Other
+J-Punk	Other
+Post-Punk Revival	Post-Punk
+Steampunk	Other
+Oi-Punk	Other
+Ska Punk	Ska
+Punkabilly	Other
+Gypsy Punk	Other
+Hardcore Punk	Other
+Celtic Punk	Other
+Street Punk	Other
+Horror Punk	Other
+Protopunk	Other
+Funk Melody	Funk
+Funk	Other
+Crunkcore	Other
+G-Funk	Funk
+Skate Punk	Ska
+Cowpunk	Other
+Punk Cabaret	Other
+Crust Punk	Other
+Jazz-Funk	Funk	**	['Jazz', 'Funk']
+Dance Punk	Dance
+Pop Punk	Pop
+Crunk	Other
+Anarcho-Punk	Other
+Punk Blues	Blues
+Funk Metal	Funk
+Blue-Eyed Soul	Soul
+Neo Soul	Soul
+Soul Jazz	Jazz	**	['Soul', 'Jazz']
+New Jack Swing	Other
+Smooth Jazz	Jazz
+Acid Jazz	Jazz
+Gypsy Jazz	Jazz
+Latin Jazz	Jazz	**	['Jazz', 'Latin']
+Jazz Fusion	Jazz
+Vocal Jazz	Jazz	**	['Jazz', 'Vocal']
+Contemporary Jazz	Jazz
+Nu Jazz	Jazz
+Italo Disco	Other
+Disco House	Other
+Nu-Disco	Other
+Gothic Metal	Other
+Sunshine Pop	Pop
+Futurepop	Pop
+Country Pop	Pop	**	['Pop', 'Country']
+Power Pop	Pop
+Pop-Rap	Pop
+Synthpop	Pop
+Dream Pop	Pop
+Música Popular Portuguesa	Pop
+Classic Pop	Pop
+Art Pop	Pop
+K-Pop	Pop
+Mandopop	Pop
+Europop	Pop
+Latin Pop	Pop	**	['Pop', 'Latin']
+Teen Pop	Pop
+Austropop	Pop
+Britpop	Pop
+French Pop	Pop
+Jangle Pop	Pop
+J-Pop	Pop
+Bubblegum Pop	Pop
+C-Pop	Pop
+Nederpop	Pop
+Indie Pop	Pop	**	['Pop', 'Indie']
+Experimental Pop	Pop
+Baroque Pop	Pop
+Dance-Pop	Pop	**	['Pop', 'Dance']
+Cantopop	Pop
+Avant-Pop	Pop
+Noise Pop	Pop
+Avant-garde Metal	Avant-garde
+Melodic Metalcore	Metalcore
+Breakbeat	Other
+Worldbeat	Other
+Big Beat	Other
+Beatbox	Other
+Eurobeat	Other
+Afrobeat	Other
+Chicago Blues	Blues
+Swamp Blues	Blues
+Jump Blues	Blues
+Delta Blues	Blues
+Country Blues	Blues	**	['Blues', 'Country']
+New Orleans Rhythm and Blues	Blues
+Harmonica Blues	Blues
+Electric Blues	Blues
+Dirty Blues	Blues
+Alternative Dance	Dance
+Eurodance	Dance
+Bubblegum Dance	Dance
+Dancehall	Dance
+Modern Classical	Other
+Neoclassical	Other
+Symphonic Black Metal	Black Metal
+Unblack Metal	Black Metal
+Country Rap	Country
+Alternative Country	Country
+Outlaw Country	Country
+Post-Grunge	Other
+Indietronica	Indie
+Bandanejo	Other
+Reggaeton	Reggae
+Roots Reggae	Reggae
+Reggae Fusion	Reggae
+Progressive House	Other
+Hip House	Other
+Tech House	Other
+Acid House	Other
+Deep House	Other
+French House	Other
+Martial Industrial	Industrial
+Industrial Metal	Industrial
+Post-Industrial	Industrial
+Power Noise	Other
+Alpine New Wave	New Wave
+New Rave	Other
+Dark Cabaret	Other
+Melodic Death Metal	Death Metal
+Progressive Death Metal	Death Metal
+Brutal Death Metal	Death Metal
+Technical Death Metal	Death Metal
+Contemporary R&B	R&B
+Soundtrack/Television	Other
+Soundtrack/Musical	Other
+Southern Gospel	Gospel
+Riot Grrrl	Other
+Crossover Thrash	Other
+Progressive Bluegrass	Other

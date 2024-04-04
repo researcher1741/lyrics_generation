@@ -1,0 +1,7 @@
+pretrained_model_name_or_path: t5-base
+from_pretrained: False
+from_checkpoint: False
+force_schema: True
+use_custom: False
+#tokenizer_path: /lyrics_generation/tokenizers/genius_section_bpe_tokenizer
+tokenizer_name: t5-base

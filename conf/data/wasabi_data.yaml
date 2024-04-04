@@ -1,0 +1,14 @@
+# @package _group_
+
+dataset_name: wasabi_chorus_preprocessing
+
+train_path: '/lyrics_generation/data/wasabi/wasabi_chorus_preprocessing/train.jsonl'
+validation_path: '/lyrics_generation/data/wasabi/wasabi_chorus_preprocessing/dev.jsonl'
+test_path: '/lyrics_generation/data/wasabi/wasabi_chorus_preprocessing/test.jsonl'
+language: english
+prompt_component_probability: 0.5
+max_len: 1024
+batch_size: 3
+test_batch_size: 6
+num_workers: 8
+with_prompt: True

@@ -1,0 +1,7 @@
+pretrained_model_name_or_path: /lyrics_generation/MODELS/t5-v1_1-large/
+from_pretrained: False
+from_checkpoint: True
+force_schema: True
+use_custom: False
+tokenizer_path: /lyrics_generation/CHECKPOINTS/T5_large_EN/tokenizer
+training_checkpoint_to_load: /lyrics_generation/CHECKPOINTS/T5_large_EN/epoch=9-step=250786.ckpt

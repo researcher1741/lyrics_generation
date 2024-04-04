@@ -1,0 +1,15 @@
+dataset_name: genius_phoneme
+train_path: /lyrics_generation/DATA/phonemised_dataset/section_dataset_rhyme_and_verse_length_filtered/train.jsonl
+validation_path: /lyrics_generation/DATA/phonemised_dataset/section_dataset_rhyme_and_verse_length_filtered/dev.jsonl
+test_path: /lyrics_generation/DATA/phonemised_dataset/section_dataset_rhyme_and_verse_length_filtered/test.jsonl
+genre_mapping_path: /lyrics_generation/data/genres_mapping_100.txt
+word_frequency_data_path: /lyrics_generation/data/enwiki-20210820-words-frequency.filtered.pkl
+language: english
+rhyming_schema_dropout_probability: 0.5
+max_len: 300
+batch_size: 4
+test_batch_size: 8
+num_workers: 32
+with_prompt: True
+limit: 10000
+prompt_component_probability: 1.0

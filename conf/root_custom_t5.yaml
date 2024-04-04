@@ -1,0 +1,15 @@
+# Required to make the "experiments" dir the default one for the output of the models
+hydra:
+  run:
+    dir: ./experiments/${data.dataset_name}-v${data.version}/${train.model_name}/
+    
+#${now:%Y-%m-%d}/${now:%H-%M-%S}
+defaults:
+  - _self_
+  - train: custom_t5_train 
+  - model: custom_t5_model 
+  - data: genius_section_0.2.1
+  - generation: default_generation
+
+out_dir: /lyrics_generation/NEW_CKPT_CHECK/custom-t5v1.1-large-RL/epoch=5-step=381780_new
+checkpoint_path: /lyrics_generation/NEW_CKPT_CHECK/custom-t5v1.1-large-RL/epoch=5-step=381780.ckpt

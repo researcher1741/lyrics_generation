@@ -1,0 +1,38 @@
+# reproducibility
+seed: 42
+
+# model name
+model_name: longformer-large-lyrics-emotions-classification # used to name the directory in which model's checkpoints will be stored (experiments/model_name/...)
+lr: 1e-5
+description: "Longformer-large base emotion classififier - classification"
+task: classification
+# pl_trainer
+pl_trainer:
+  _target_: pytorch_lightning.Trainer
+  gpus: [0,]
+  accumulate_grad_batches: 4 
+  # limit_val_batches: 1000
+  gradient_clip_val: 10.0
+  val_check_interval: 1.0  # you can specify an int "n" here => validation every "n" steps
+  # max_steps: 1_000_000
+  max_epochs: 30
+  # strategy: ddp
+  # num_nodes: 1
+  # uncomment the lines below for training with mixed precision
+  precision: 16
+
+# early stopping callback
+# "early_stopping_callback: null" will disable early stopping
+early_stopping_callback:
+  _target_: pytorch_lightning.callbacks.EarlyStopping
+  monitor: val_loss
+  mode: min
+  patience: 5
+
+model_checkpoint_callback:
+  _target_: pytorch_lightning.callbacks.ModelCheckpoint
+  monitor: val_top_1
+  mode: max
+  verbose: True
+  save_top_k: 1
+  dirpath: /lyrics_generation/NEW_CKPT_CHECK/

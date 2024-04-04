@@ -1,0 +1,15 @@
+dataset_name: genius_section_0.2_RTL
+
+train_path: /lyrics_generation/DATA/genius_section_0.2_RTL/train.jsonl
+validation_path: /lyrics_generation/DATA/genius_section_0.2_RTL/dev.jsonl
+test_path: /lyrics_generation/DATA/genius_section_0.2_RTL/test.jsonl
+genre_mapping_path: /lyrics_generation/data/genres_mapping_100.txt
+word_frequency_data_path: /lyrics_generation/data/enwiki-20210820-words-frequency.filtered.pkl
+language: english
+rhyming_schema_dropout_probability: 0.5
+max_len: 300
+batch_size: 4
+test_batch_size: 8
+num_workers: 32
+with_prompt: True
+version: '0.2' # PretrainingDatasetEncoderDecoder

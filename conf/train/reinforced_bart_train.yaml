@@ -1,0 +1,39 @@
+# reproducibility
+seed: 42
+
+# model name
+model_name: reinforced-bart-large # used to name the directory in which model's checkpoints will be stored (experiments/model_name/...)
+lr: 1e-5
+description: "Bart model trained on genius.com blocks with RL loss added for rhyming. Now reward is 1 if rhyme happens, -1 otherwise (before it was 0). New alpha and reinforce loss kicks in after 2000 updates. LR is not updated anymore after it reaches its peak."
+alpha: 0.1
+no_reinforce_updates: 2_000
+reinforce_loss_samples: 10
+# pl_trainer
+pl_trainer:
+  _target_: pytorch_lightning.Trainer
+  gpus: [0,]
+  accumulate_grad_batches: 32
+  limit_val_batches: 50
+  gradient_clip_val: 10.0
+  val_check_interval: 5_000  # you can specify an int "n" here => validation every "n" steps
+  max_steps: 1_000_000
+  # strategy: ddp
+  # num_nodes: 1
+  # uncomment the lines below for training with mixed precision
+  precision: 16
+
+# early stopping callback
+# "early_stopping_callback: null" will disable early stopping
+early_stopping_callback:
+  _target_: pytorch_lightning.callbacks.EarlyStopping
+  monitor: val_loss
+  mode: min
+  patience: 5
+
+model_checkpoint_callback:
+  _target_: pytorch_lightning.callbacks.ModelCheckpoint
+  monitor: val_loss
+  mode: min
+  verbose: True
+  save_top_k: 2
+  dirpath: /lyrics_generation/NEW_CKPT_CHECK/

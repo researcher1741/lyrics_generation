@@ -1,0 +1,43 @@
+# @package _group_
+
+# reproducibility
+seed: 42
+
+# model name
+model_name: gpt2-large # used to name the directory in which model's checkpoints will be stored (experiments/model_name/...)
+lr: 1e-5
+description: "Base model is GPT2-Large"
+alpha: None
+tasks:
+  - lyrics_generation
+task_probs:
+  - 1.0
+# pl_trainer
+pl_trainer:
+  _target_: pytorch_lightning.Trainer
+  gpus: [0]
+  accumulate_grad_batches: 8
+  limit_val_batches: 50
+  gradient_clip_val: 10.0
+  val_check_interval: 10_000  # you can specify an int "n" here => validation every "n" steps, if float, is every x % of the training set 
+  max_steps: 400_000
+  # strategy: ddp
+  # num_nodes: 1
+  # uncomment the lines below for training with mixed precision
+  precision: 16
+
+# early stopping callback
+# "early_stopping_callback: null" will disable early stopping
+early_stopping_callback:
+  _target_: pytorch_lightning.callbacks.EarlyStopping
+  monitor: val_loss
+  mode: min
+  patience: 5
+
+model_checkpoint_callback:
+  _target_: pytorch_lightning.callbacks.ModelCheckpoint
+  monitor: val_loss
+  mode: min
+  verbose: True
+  save_top_k: 2
+  dirpath: /lyrics_generation/CHECKPOINTS

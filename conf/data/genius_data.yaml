@@ -1,0 +1,15 @@
+# @package _group_
+
+dataset_name: genius_full_song
+
+train_path: /lyrics_generation/data/genius/train.jsonl
+validation_path: /lyrics_generation/data/genius/dev.jsonl
+test_path: /lyrics_generation/data/genius/test.jsonl
+language: english
+prompt_component_probability: 0.5
+max_len: 128
+batch_size: 50
+test_batch_size: 100
+num_workers: 8
+with_prompt: True
+genre_mapping_path: /lyrics_generation/data/genres_mapping_100.txt

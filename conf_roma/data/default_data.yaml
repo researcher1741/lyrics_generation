@@ -1,0 +1,16 @@
+dataset_name: multilingual_section
+
+train_path: /home/ma-user/modelarts/user-job-dir/LG/DATA/genius_section_0.2.1/section_dataset_rhyme_and_verse_length_filtered_v0.2.1/train.jsonl
+validation_path: /home/ma-user/modelarts/user-job-dir/LG/DATA/genius_section_0.2.1/section_dataset_rhyme_and_verse_length_filtered_v0.2.1/dev.jsonl
+test_path: /home/ma-user/modelarts/user-job-dir/LG/DATA/genius_section_0.2.1/section_dataset_rhyme_and_verse_length_filtered_v0.2.1/test.jsonl
+genre_mapping_path: /home/ma-user/modelarts/user-job-dir/data/genres_mapping_100.txt
+# word_frequency_data_path: /lyrics_generation/data/enwiki-20210820-words-frequency.filtered.pkl
+# language: english
+language: multi
+add_language: True
+max_len: 300
+batch_size: 2
+test_batch_size: 8
+num_workers: 0
+with_prompt: True
+version: '0.2.1' # LastWordFirst

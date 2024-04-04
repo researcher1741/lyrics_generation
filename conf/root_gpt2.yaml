@@ -1,0 +1,13 @@
+# Required to make the "experiments" dir the default one for the output of the models
+hydra:
+  run:
+    dir: ./experiments/${data.dataset_name}/${train.model_name}/
+    
+#${now:%Y-%m-%d}/${now:%H-%M-%S}
+defaults:
+  - _self_
+  - train: gpt2_train 
+  - model: gpt2_model 
+  - data: genius_with_phoneme_data
+  - generation: default_generation
+

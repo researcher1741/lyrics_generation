@@ -1,0 +1,1 @@
+ PYTHONPATH=src streamlit run src/demo/demo_v2.py
